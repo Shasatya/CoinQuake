@@ -1,30 +1,76 @@
-import { Avatar, Box, Stack, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Box,
+  Stack,
+  HStack,
+  Text,
+  Heading,
+  VStack,
+  Input,
+} from "@chakra-ui/react";
+
+import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Box
-      bgColor={"blackAlpha.900"}
-      color={"whiteAlpha.700"}
-      minH={"48"}
-      px={"16"}
-      py={["16", "8"]}
-    >
+    <Box bgColor={"#724cf9"} color={"white"} p={"8"}>
       <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
         <VStack w={"full"} alignItems={["center", "flex-start"]}>
-          <Text fontWeight={"bold"}>About Us</Text>
-          <Text
-            fontSize={"sm"}
-            letterSpacing={"widest"}
-            textAlign={["center", "left"]}
-          >
-            We are the best crypto trading app in India, we provide our guidance
-            at a very cheap price.
-          </Text>
+          <Heading fontWeight={"bold"}>CoinQuake</Heading>
+          <HStack>
+            <Button
+              height={"50px"}
+              width={"50px"}
+              fontSize={"2rem"}
+              p={"1px"}
+              borderRadius={"50%"}
+            >
+              <FaGithub />
+            </Button>
+            <Button
+              height={"50px"}
+              width={"50px"}
+              fontSize={"2rem"}
+              p={"1px"}
+              borderRadius={"50%"}
+            >
+              <FaInstagram />
+            </Button>
+            <Button
+              height={"50px"}
+              width={"50px"}
+              fontSize={"2rem"}
+              p={"1px"}
+              borderRadius={"50%"}
+            >
+              <FaLinkedin />
+            </Button>
+            <Button
+              height={"50px"}
+              width={"50px"}
+              fontSize={"2rem"}
+              p={"1px"}
+              borderRadius={"50%"}
+            >
+              <FaTwitter />
+            </Button>
+          </HStack>
         </VStack>
 
         <VStack>
-          <Avatar boxSize={"28"} mt={["4", "0"]} />
-          <Text>Our Founder</Text>
+          <Text
+            fontSize={"large"}
+            fontWeight={"bold"}
+            marginTop={["2rem", "0"]}
+          >
+            For our Newsletter
+          </Text>
+          <Input
+            placeholder={"Enter your email"}
+            bgColor={"white"}
+            textAlign={"center"}
+          />
+          <Button color={"#724cf9"}>SUBSCRIBE</Button>
         </VStack>
       </Stack>
     </Box>

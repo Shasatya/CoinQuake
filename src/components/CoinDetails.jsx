@@ -165,7 +165,7 @@ const CoinDetails = () => {
 
             <Badge
               fontSize={"2xl"}
-              bgColor={"blackAlpha.800"}
+              bgColor={"#724cf9"}
               color={"white"}
             >{`#${coin.market_cap_rank}`}</Badge>
 

@@ -77,7 +77,7 @@ const ExchangeCard = ({ name, img, url, rank }) => (
         objectFit={"contain"}
         alt={"Exchange"}
       />
-      <Heading size={"md"} noOfLines={1}>
+      <Heading size={"md"} noOfLines={1} color={"#724cf9"}>
         {rank}
       </Heading>
       <Text noOfLines={1}>{name}</Text>

@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <HStack
-      p={4}
+      p={1}
+      px={2}
       shadow={"base"}
-      bgColor={"blackAlpha.900"}
+      bgColor={"#724cf9"}
       justifyContent={"space-between"}
+      borderBottom={"1px solid #fff"}
     >
       <Box>
         <Button variant={"unstyled"} color={"white"}>
