@@ -12,16 +12,38 @@ const Header = () => {
       borderBottom={"1px solid #fff"}
     >
       <Box>
-        <Button variant={"unstyled"} color={"white"}>
+        <Button
+          variant={"unstyled"}
+          color={"white"}
+          transition={"all 0.3s"}
+          css={{
+            "&:hover": { transform: "translateY(-8%)" },
+          }}
+        >
           <Link to="/">HOME</Link>
         </Button>
       </Box>
 
       <Box>
-        <Button variant={"unstyled"} color={"white"}>
+        <Button
+          variant={"unstyled"}
+          color={"white"}
+          transition={"all 0.3s"}
+          css={{
+            "&:hover": { transform: "translateY(-8%)" },
+          }}
+        >
           <Link to="/exchanges">EXCHANGE</Link>
         </Button>
-        <Button variant={"unstyled"} color={"white"} marginLeft={"4"}>
+        <Button
+          variant={"unstyled"}
+          color={"white"}
+          marginLeft={"4"}
+          transition={"all 0.3s"}
+          css={{
+            "&:hover": { transform: "translateY(-8%)" },
+          }}
+        >
           <Link to="/coins">COINS</Link>
         </Button>
       </Box>

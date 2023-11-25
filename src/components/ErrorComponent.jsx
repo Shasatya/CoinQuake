@@ -1,18 +1,20 @@
-import { Alert, AlertIcon } from "@chakra-ui/react";
+import { Alert, Box, AlertIcon } from "@chakra-ui/react";
 
 const ErrorComponent = ({ message }) => {
   return (
-    <Alert
-      status="error"
-      position={"fixed"}
-      bottom={"4"}
-      left={"50%"}
-      transform={"translateX(-50%)"}
-      w={"15rem"}
-    >
-      <AlertIcon />
-      {message}
-    </Alert>
+    <Box h={"80vh"} w={"100vw"} >
+      <Alert
+        status="error"
+        position={"absolute"}
+        bottom={"50%"}
+        left={"50%"}
+        transform={"translateX(-50%)"}
+        w={"15rem"}
+      >
+        <AlertIcon />
+        {message}
+      </Alert>
+    </Box>
   );
 };
 
