@@ -62,10 +62,14 @@ const Footer = () => {
           </Text>
           <Input
             placeholder={"Enter your email"}
-            bgColor={"white"}
+            background={"rgba( 255, 255, 255, 0.1 )"}
+            boxShadow={"0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"}
+            backdropFilter={"blur( 4px )"}
+            border={"1px soild rgba( 255, 255, 255, 0.18 )"}
+            _placeholder={{ color: "#fff" }}
             textAlign={"center"}
           />
-          <Button color={"#724cf9"} borderRadius={"5px"}>
+          <Button color={"#724cf9"} borderRadius={"5px"} bgColor={"#fff"}>
             {" "}
             SUBSCRIBE
           </Button>

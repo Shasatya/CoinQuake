@@ -10,9 +10,10 @@ import {
   FormLabel,
   Stack,
 } from "@chakra-ui/react";
-import bg from "../assets/bg.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import bg from "../assets/img/bg.png";
+import bg2 from "../assets/img/bg2.jpg";
 
 const Home = () => {
   const updateOptions = [
@@ -48,21 +49,37 @@ const Home = () => {
     },
   ];
 
-  const whyOptions = [
+  const membershipOptions = [
     {
       image:
-        "https://img.freepik.com/free-vector/data-points-concept-illustration_114360-2194.jpg?w=996&t=st=1700594965~exp=1700595565~hmac=fafc31dae3c6ba216a1fe9ebf3c860c07d76f22644c871f0025978996e6e71ea",
-      heading: "Live Data",
+        "https://img.freepik.com/free-vector/product-quality-concept-illustration_114360-7301.jpg?w=996&t=st=1701020262~exp=1701020862~hmac=e771b5a767d8bd238b0d71cbc6bcf47acd2ac024e22febff76ce6660a8627660",
+      heading: "Expert Analysis",
     },
     {
       image:
-        "https://img.freepik.com/free-vector/worldwide-delivery-service-global-navigation-ordering-system-world-tourism-idea_335657-323.jpg?w=996&t=st=1700594776~exp=1700595376~hmac=863ea86f5e8fc49fc24bbbace6b8cf57bbf2b8ba03c5ff0e3783d0f1e0d22e84",
-      heading: "Easy Usage",
+        "https://img.freepik.com/free-vector/strategic-consulting-concept-illustration_114360-8994.jpg?w=996&t=st=1701010031~exp=1701010631~hmac=46b2a494b30146df6f26d5ba80cd2d5f552e328a89a96b2fbbab231bc032be4f",
+      heading: "1 on 1 Sessions",
     },
     {
       image:
-        "https://img.freepik.com/free-vector/cyber-defense-logo-with-checkmark-trust-your-digital-business_1017-44245.jpg?w=996&t=st=1700594667~exp=1700595267~hmac=ca88dfd88322c357c1499da1ddfda2d65e24caf27703df34b5ac63e7a0a7c2ad",
-      heading: "Trusted",
+        "https://img.freepik.com/premium-vector/specialist-trader-who-buys-sells-cryptocurrencies-mines-blockchain-coins-bitcoin_519070-386.jpg?semt=ais",
+      heading: "Portfolio",
+    },
+    {
+      image:
+        "https://img.freepik.com/premium-vector/24-hour-open-service-background-communication-vector_647881-704.jpg?semt=sph",
+      heading: "24Hrs Service",
+    },
+    {
+      image:
+        "https://img.freepik.com/free-vector/attention-attraction-important-announcement-warning-information-sharing-latest-news-loudspeaker-megaphone-bullhorn-with-exclamation-mark-vector-isolated-concept-metaphor-illustration_335657-2809.jpg?w=996&t=st=1701019999~exp=1701020599~hmac=25b988b25ec16c8f5c3535c6e036e068f2a787a125a25a5d76f38a0af3cb0c1f",
+      heading: "Latest Trends",
+    },
+
+    {
+      image:
+        "https://img.freepik.com/free-vector/connected-world-concept-illustration_114360-4240.jpg?w=996&t=st=1701020343~exp=1701020943~hmac=d2c94d6730754a80d1919c8fa6501aaebb36d508ae29924bfdb971f6f2d4b987",
+      heading: "Community",
     },
   ];
 
@@ -108,6 +125,24 @@ const Home = () => {
     },
   ];
 
+  const whyOptions = [
+    {
+      image:
+        "https://img.freepik.com/free-vector/data-points-concept-illustration_114360-2194.jpg?w=996&t=st=1700594965~exp=1700595565~hmac=fafc31dae3c6ba216a1fe9ebf3c860c07d76f22644c871f0025978996e6e71ea",
+      heading: "Live Data",
+    },
+    {
+      image:
+        "https://img.freepik.com/free-vector/worldwide-delivery-service-global-navigation-ordering-system-world-tourism-idea_335657-323.jpg?w=996&t=st=1700594776~exp=1700595376~hmac=863ea86f5e8fc49fc24bbbace6b8cf57bbf2b8ba03c5ff0e3783d0f1e0d22e84",
+      heading: "Easy Usage",
+    },
+    {
+      image:
+        "https://img.freepik.com/free-vector/cyber-defense-logo-with-checkmark-trust-your-digital-business_1017-44245.jpg?w=996&t=st=1700594667~exp=1700595267~hmac=ca88dfd88322c357c1499da1ddfda2d65e24caf27703df34b5ac63e7a0a7c2ad",
+      heading: "Trusted",
+    },
+  ];
+
   return (
     <>
       <Box
@@ -118,7 +153,7 @@ const Home = () => {
         position={"relative"}
       >
         <Box position={"absolute"} top={"35%"} left={["5%", "10%"]}>
-          <Heading color={"white"}>
+          <Heading color={"white"} letterSpacing={"1.5px"}>
             {" "}
             Lets Invest in Crypto <br />
             Bro{" "}
@@ -134,7 +169,12 @@ const Home = () => {
               repeatType: "reverse",
             }}
           >
-            <Button borderRadius={"1rem"} mt={"10px"} color={"#724cf9"}>
+            <Button
+              borderRadius={"1rem"}
+              mt={"10px"}
+              bgColor={"#fff"}
+              color={"#724cf9"}
+            >
               <Link to="/coins">Get Started &#8599;</Link>
             </Button>
           </motion.div>
@@ -142,7 +182,12 @@ const Home = () => {
       </Box>
 
       <Box>
-        <Heading textAlign={"center"} my={"6"} color={"#724cf9"}>
+        <Heading
+          textAlign={"center"}
+          my={"6"}
+          color={"#724cf9"}
+          letterSpacing={"1.5px"}
+        >
           Updates
         </Heading>
 
@@ -181,43 +226,111 @@ const Home = () => {
       </Box>
 
       <Box
-        bgImage={
-          "https://img.freepik.com/free-photo/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-bus_1258-176958.jpg?t=st=1700924724~exp=1700928324~hmac=0c20cd3c1d7a0707682c995d0629c9d43438ce07b010a7d30c725e1c4b2bc609&w=1480"
-        }
-        bgSize={"100%"}
-        objectFit={"contain"}
-        bgPosition={"center center"}
-        bgRepeat={"no-repeat"}
+        shadow={"lg"}
+        borderRadius={["1px", "2rem"]}
+        maxWidth={"40rem"}
+        m={"4rem auto"}
+        p={"4"}
+        px={["0.1rem", "3rem"]}
+      >
+        <Heading color={"#724cf9"} textAlign={"center"} letterSpacing={"1.5px"}>
+          Start Learning
+        </Heading>
+        <Text
+          p={"4"}
+          fontSize={"medium"}
+          fontWeight={"300"}
+          letterSpacing={"0.8px"}
+        >
+          Feel free to become a part of our exclusive membership program, where
+          youll have the opportunity to delve deep into the intricate world of
+          crypto market trends, gaining valuable knowledge and staying ahead of
+          the curve in this dynamic and evolving industry.
+        </Text>
+        <HStack
+          wrap={"wrap"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={"5"}
+        >
+          {membershipOptions.map((i) => (
+            <VStack key={i.heading}>
+              <Box
+                h={"8rem"}
+                w={"8rem"}
+                shadow={"lg"}
+                borderRadius={"1rem"}
+                border={"1px solid #fff"}
+                overflow={"hidden"}
+                transition={"all ease 0.3s"}
+                css={{
+                  "&:hover": {
+                    border: "1px solid #724cf9",
+                  },
+                }}
+              >
+                <Image
+                  src={i.image}
+                  h={"100%"}
+                  w={"100%"}
+                  borderRadius={"1rem 1rem 0 0"}
+                  objectFit={"cover"}
+                />
+              </Box>
+              <Text
+                fontWeight={"400"}
+                fontSize={"medium"}
+                color={"#724cf9"}
+                mt={"-1"}
+                letterSpacing={"0.8px"}
+              >
+                {i.heading}
+              </Text>
+            </VStack>
+          ))}
+        </HStack>
+        <Box textAlign={"center"} mt={"8"}>
+          <Button
+            bgColor={"#fff"}
+            color={"#724cf9"}
+            shadow={"lg"}
+            borderRadius={"1rem"}
+            border={"1px solid #724cf9"}
+          >
+            {" "}
+            Register Now
+          </Button>
+        </Box>
+      </Box>
+
+      <Box
+        bgImage={[bg2]}
+        bgSize={"cover"}
+        bgPosition={["right", "center"]}
         py={"4"}
         my={"12"}
       >
-        {/* background: rgba( 255, 255, 255, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
-
         <Box
           background={"rgba( 255, 255, 255, 0.1 )"}
           boxShadow={"0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"}
           backdropFilter={"blur( 4px )"}
           border={"1px soild rgba( 255, 255, 255, 0.18 )"}
-          // bgImage={
-          //   "https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product_1258-54682.jpg?t=st=1700843409~exp=1700844009~hmac=a170add9d2f113ed9dcd2f0a9f62e94a596272b1ce3fa7ce6702f1b214b8af8c"
-          // }
-          // bgSize={"cover"}
-          // bgPosition={"center"}
           margin={"3rem 0"}
           p={["4", "8"]}
           maxW={"30rem"}
           borderRadius={"0 2rem 2rem 0"}
         >
-          <Heading textAlign={"center"} color={"white"}>
+          <Heading textAlign={"center"} color={"white"} letterSpacing={"1.5px"}>
             About CoinQuake
           </Heading>
           {aboutOptions.map((i) => (
-            <Text key={i.id} color={"white"} mt={"6"} fontWeight={"300"}>
+            <Text
+              key={i.id}
+              color={"white"}
+              mt={"6"}
+              fontWeight={"300"}
+              letterSpacing={"1px"}
+            >
               {i.text}
             </Text>
           ))}
@@ -228,7 +341,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
           boxShadow={"0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"}
           backdropFilter={"blur( 4px )"}
           border={"1px soild rgba( 255, 255, 255, 0.18 )"}
-          // bgColor={"#ccc"}
           maxW={"30rem"}
           margin={[
             "1rem 0rem 2rem auto",
@@ -240,7 +352,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
           borderRadius={"2rem 0 0 2rem"}
         >
           <VStack>
-            <Heading mb={"3"} mt={"-5"} color={"#fff"}>
+            <Heading mb={"3"} mt={"-5"} color={"#fff"} letterSpacing={"1.5px"}>
               Contact
             </Heading>
 
@@ -256,7 +368,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
                     boxShadow={"0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"}
                     backdropFilter={"blur( 4px )"}
                     border={"1px soild rgba( 255, 255, 255, 0.18 )"}
-                    _placeholder={{ color: '#fff' }}
+                    _placeholder={{ color: "#fff" }}
                   />
                 </Box>
                 <Box>
@@ -269,7 +381,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
                     boxShadow={"0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"}
                     backdropFilter={"blur( 4px )"}
                     border={"1px soild rgba( 255, 255, 255, 0.18 )"}
-                    _placeholder={{ color: '#fff' }}
+                    _placeholder={{ color: "#fff" }}
                   />
                 </Box>
               </Stack>
@@ -280,6 +392,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
               mt={"16px"}
               mb={"-1rem"}
               color={"#724cf9"}
+              bgColor={"#fff"}
               w={["255px", "full"]}
             >
               Submit
@@ -289,7 +402,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
       </Box>
 
       <Box mb={"12"}>
-        <Heading textAlign={"center"} my={"6"} color={"#724cf9"}>
+        <Heading
+          textAlign={"center"}
+          my={"6"}
+          color={"#724cf9"}
+          letterSpacing={"1.5px"}
+        >
           Why CoinQuake?
         </Heading>
 
@@ -331,6 +449,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */}
                 bottom={"0%"}
                 left={"50%"}
                 transform={"translate(-50%)"}
+                letterSpacing={"1px"}
               >
                 {i.heading}
               </Text>
